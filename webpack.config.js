@@ -1,7 +1,8 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: [__dirname + '/index.ts',
+            __dirname + '/styles.scss'],
     module: {
         rules: [
             {
@@ -9,6 +10,14 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
+            {
+                test: /\.scss$/,
+                exclude: /node_modules/,
+
+                type: 'asset/resource',
+                generator: {
+                    filename: '[name].css'
+                }},
         ],
     },
     resolve: {

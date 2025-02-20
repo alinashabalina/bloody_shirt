@@ -5,10 +5,10 @@
     "outDir": "./src",
     "allowJs": true,
     "checkJs": true,
-
     "sourceMap": true,
-    "removeComments": true,
+    "removeComments": true
   },
-
-  "include": ["."]
+  "include": [
+    "."
+  ]
 }

@@ -1,7 +1,10 @@
 This project 'Bloody shirt' (pun intended) aims at exploring the depths of animations, masking & bundling.
 
-It is for now created with vanilla JavaScript, CSS & HTML and further will be changed to TypeScript & SCSS.
 
+To check the webpack compilation run the production:
 
+npm run build
+
+It will create a dist folder with bundle.js & styles.css 
 
 
